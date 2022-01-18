@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/disenologin.css">
+    <script src="js/acciones.js"></script>
+    <title>WardLock Login</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="bar">
+                <div class="nivelform">
+                    <form action="login.php" method="post">
+                    <input id="Usuario" type="text" placeholder="Usuario" name="usr" required>
+                    <input type="password" placeholder="Contraseña" name="psw" required>
+                    <button type="submit" name="login" id="login">Login</button>
+                    </form>
+                </div>
+            </li>
+            <li class="bar2"><?php echo'USUARIO O CONTRASEÑA INCORRECTA';?></li>
+        </ul>
+    </nav>
+      <div style="padding:20px 20px 2500px;margin-top:30px;background-color: black;height: 572px;">
+        <div class="">
+            <img src="Image/Diapositiva1.JPG" alt="" style="width:60%" class="imagen">
+        </div>
+      </div>
+      <script src="js/acciones.js"></script>
+</body>
+</html>

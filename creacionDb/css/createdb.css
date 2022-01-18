@@ -1,0 +1,74 @@
+body.borde{
+    background-image: linear-gradient(to bottom left, rgb(255, 255, 255),rgb(8, 4, 238));
+}
+div.borde1 {
+    margin: 20px;
+    height: 70px;
+    width: 95%;
+    border: 2px solid rgb(92, 24, 201);
+    padding: 1px 10px 1px 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255),rgb(8, 4, 238) , rgb(123, 0, 206));
+    text-align:center;
+}
+
+table{
+    border-collapse:collapse;
+    width:100%;
+}
+
+td{
+    height: 100%;
+    vertical-align: bottom;
+}
+
+div.borde2 {
+    margin: 15px;
+    height: 250px;
+    width: 300px;
+    border: 1px solid rgb(119, 59, 216);
+    padding: 0px 10px 20px 10px;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right,rgb(8, 4, 238), rgb(255, 255, 255), rgb(123, 0, 206));
+    text-align:center;
+    display: inline-block;
+    position: relative;
+}
+
+h3 {
+    color: rgb(0, 0, 0);
+  text-shadow: 2px 3px 6px rgb(253, 253, 253), 0 0 25px rgb(174, 0, 255), 0 0 5px rgb(55, 5, 102);
+}
+p {
+    font-family: "georgia", serif;
+}
+
+button{
+    background-color: rgb(255, 255, 255);
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white; 
+    color:rgb(92, 24, 201);
+    font-size: larger; 
+    border: 2px solid rgb(92, 24, 201);
+  }
+  
+  .button1:hover {
+    background-color: rgb(92, 24, 201);
+    color: white;
+  }
+
+  .returnMessage{
+    width: 300px;
+    font-size: 20px;
+    margin: 1px auto;
+    position: absolute;
+    bottom: -10px;
+  }

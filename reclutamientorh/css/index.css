@@ -1,0 +1,145 @@
+#navbar {
+    overflow: hidden;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(55, 0, 255));
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 254, 203);
+   }
+   #navbar a:hover {
+    color: #aeb908;
+  }
+  .makeof{
+      display: inline;
+      background: -webkit-linear-gradient(left, rgb(71, 75, 82), rgb(238, 234, 30));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }  
+  /* Page content */
+  .contenido {
+    padding: 80px 20px 10px 90px;
+    }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .contenenido {
+    padding-top: 60px;
+  }
+
+  .sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-image: linear-gradient(to bottom left, transparent, rgb(44, 195, 255),purple);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(255, 253, 146);
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #a5af1b;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .inputblock{
+      width: 400px;
+      padding: 10px 20px 50px 15px;
+      border-style: solid;
+      border-radius: 20px;
+      border-width: 3px;
+      border-color: blue;
+      text-align: center;
+      outline-style: outset;
+      outline-color: rgb(164, 164, 255);
+      color: rgb(38, 0, 255);
+  }
+
+  .formpresent{
+      font-size: 19px;
+  }
+  .inputborde{
+      border:none;
+      border-bottom: 6px solid blue;
+      border-width: 4px;
+      height: 30px;
+      font-size: 15px;
+      padding: 4px 25px;
+      margin-left: 0px;
+      text-align: left;
+  }
+  .botonreg{
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    border-color: blue;
+    font-size: 16px;
+    padding: 8px 20px;
+    text-align: center;
+    background-color: rgb(33, 33, 126);
+    outline-width: 1px;
+    outline-style: outset;
+    outline-color: rgb(112, 112, 255);
+  }
+.outputblock{
+    text-align: justify;
+    font-size: 20px;
+    padding: 1px 1px 1px 200px;
+    
+}
+.outputblock .bloqueName{
+ color:blue;
+}
+.table{
+    width:100%;
+    vertical-align: top;
+}
+.td{
+    width: 30px;
+}
+
+

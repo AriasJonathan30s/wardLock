@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/createdb.css">
+    <link rel="stylesheet" href="dbcreate.php">
+</head>
+<body class="borde">
+    <div class="borde1"><h2>CREACION DE SERVIDOR DE BASE DE DATOS WARDLOCK</h2></div>
+    <table>
+    <tr>
+        <td>
+            <div class="borde2"><h3>Crea la base de datos del almacen</h3>
+                <p>En este recuadro contiene la creacion del servidor,
+                    Presione este boton para crear el servidor</p>
+                <form action="dbcreate.php" method="post">
+                <button class="button button1" type="submit" name="creasrv" id="creasrv" value="creaserv">Crear DB</button>
+                </form>
+                <div class="returnMessage"><p><?php if(array_key_exists('creasrv',$_POST)){echo $creasrvr;}?></p></div>
+            </div>
+        </td>
+        <td>
+            <div class="borde2"><h3>Crear tabla de trabajador</h3>
+                <p>Esta tabla contiene: Id de trabajador, nombre, apellido,
+                    fecha de contratación, puesto y area.</p>
+                <form action="dbcreate.php" method="post">
+                <button class="button button1" type="submit" name="creartabempl" id="creartabempl" value="creatablaemp">Trabajador</button>
+                </form> 
+                <div class="returnMessage"><p><?php if(array_key_exists('creartabempl',$_POST)){ echo $creatabempleado;}?></p></div>
+            </div>
+        </td>
+        <td>
+            <div class="borde2"><h3>Crear tabla de almacenamiento</h3>
+                <p>Esta tabla contiene: id de almacen, pasillo, nivel, localizacion, producto, cantidad total,
+                    caducidad de producto.
+                </p>
+                    <form action="dbcreate.php" method="post">
+                        <button class="button button1" type="submit" name="creartabalm" id="creartabalm" value="creartabalmac">Almacen</button>
+                </form>
+            <div class="returnMessage"><p><?php if(array_key_exists('creartabalm',$_POST)){ echo $creatabalmacn;}?></p></div>
+        </div>   
+        </td>     
+    </tr>
+    <tr>
+        <td>
+            <div class="borde2"><h3>Crear tabla de productos</h3>
+                <p>Esta tabla contiene: id de producto, de entrada, la cantidad total y caducidad de producto</p>
+                    <form action="dbcreate.php" method="post">
+                    <button class="button button1" type="submit" name="creartabprod" id="creartabprod" value="creartabprodu">Productos</button>
+                </form>
+                <div class="returnMessage"><p><?php if(array_key_exists('creartabprod',$_POST)){ echo $creatabproduct;}?></p></div>
+            </div>        
+        </td>
+        <td>
+            <div class="borde2"><h3>Crear tabla de ingreso de productos</h3>
+                <p>Esta tabla contiene: id de entrada, de trabajador, de entrada de pedido, de producto, cantidad
+                    y fecha
+                </p>
+                    <form action="dbcreate.php" method="post">
+                    <button class="button button1" type="submit" name="creartabprodin" id="creartabprodin" value="creartabprodin">Ingreso productos</button>
+                </form>
+                <div class="returnMessage"><p><?php if(array_key_exists('creartabprodin',$_POST)){ echo $creatabproduin;}?></p></div>
+            </div>        
+        </td>
+        <td>
+            <div class="borde2"><h3>Crear tabla egreso interno de productos</h3>
+                <p>Esta tabla contiene: id de salida interna, trabajador, producto,
+                     cantidad, trabajador_rcv, fecha y hora.</p>
+                <form action="dbcreate.php" method="post">
+                    <button class="button button1" type="submit" name="creartabprodout" id="creartabprodout" value="creartabprodout">Egreso interno prods</button>
+                </form>
+                <div class="returnMessage"><p><?php if(array_key_exists('creartabprodout',$_POST)){ echo $creatabprodout;}?></p></div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="borde2"><h3>Crear tabla de egresos externos de productos</h3>
+                <p>Esta tabla contiene: id de salida externa, trabajador, pedido de salida, producto, cantidad, fecha y hora.</p>
+                <form action="dbcreate.php" method="post">
+                    <button class="button button1" type="submit" name="creartabprodextout" id="creartabprodextout" value="creartabprodextout">Egreso externo prods</button>
+                </form>
+                <div class="returnMessage"><p><?php if(array_key_exists('creartabprodextout',$_POST)){ echo $creatabprodextout;}?></p></div>
+            </div>
+        </td>
+        <td>
+            <div class="borde2"><h3>Crear tabla auditoria de almacen</h3>
+                <p>Esta tabla contiene: id de auditoria, contabildiad de producto, de cantidad total, prueba de localizacion, y fecha.</p>
+                <form action="dbcreate.php" method="post">
+                    <button class="button button1" type="submit" name="creartabaudit" id="creartabaudit" value="creartabaudit">Auditoria</button>
+                </form>
+                <div class="returnMessage"><p><?php if(array_key_exists('creartabaudit',$_POST)){ echo $creatabaudit;}?></p></div>
+            </div>
+        </td>
+    </tr>
+    </table>
+</body>
+</html>

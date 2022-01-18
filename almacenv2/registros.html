@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/disenologin.css">
+    
+    <script src="js/acciones.js"></script>
+    <title>WardLock Registros</title>
+</head>
+<body>
+  <nav id="navbar">
+    <ul>
+      <li>
+        <div class="dropdown">
+          <a class="dropbtn" href="cuenta.html">Inicio/Cuenta</a>
+        </div>
+      </li>
+      <li>
+        <div class="dropdown">
+          <div class="active"> 
+            <a class="dropbtn">Registros</a>
+          </div>
+          <div class="dropdown-content">
+            <a href="registros.html">Registro entradas</a>
+            <a href="registros.html#Registro de salida interna">Registro salida interna</a>
+            <a href="registros.html#Registro salida externa">Registro salida externa</a>
+          </div>
+        </div> 
+      </li>
+      <li>
+        <div class="dropdown">
+          <a class="dropbtn" href="productos.html">Productos</a>
+        </div>
+      </li>
+      <div class="bar">
+        <div class="username">
+            <div class="dropdown">
+              <a class="dropbtn">Hola</a>
+              <div class="dropdown-content">
+                <a href="index.html">Logout</a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </ul>
+  </nav>
+  <div style="padding:20px 20px 15px 2500;margin-top:30px;background-color: black;height: 2150px;">
+    <div class="contenido">
+      <table>
+        <tr>
+          <td>
+            <div class="celda-contenido">
+              <table>
+                <tr>
+                  <div class="header">
+                    <a name="Registro entrada"></a><h2>Registro entradas</h2>
+                  </div>
+                  <td>
+                    <form class="reg-entradas" action="/action_page.php">
+                      <div>
+                        <div>
+                          <label for="fname">Pedido</label>
+                        </div>
+                          <div>
+                          <input type="text" id="fname" name="firstname" placeholder="Folio de pedido">
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <label for="lname">Material </label>
+                        </div>
+                        <div>
+                          <input type="text" id="lname" name="lastname" placeholder="Id. de material">
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <label for="country">Estado de entrega</label>
+                        </div>
+                        <div>
+                          <select class="dropdown" id="status" name="status">
+                              <option value="Pendiente">Pendiente</option>
+                              <option value="Incompleto">Incompleto</option>
+                              <option value="Completo">Completo</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div >
+                        <div class="col-25">
+                          <label for="subject">Observación </label>
+                        </div>
+                        <div class="col-75">
+                          <textarea id="subject" name="subject" placeholder="Detalle el estado del pedido, incluya fotos (opcional)" style="height:200px"></textarea>
+                        </div>
+                      </div><div>
+                        <input type="file" id="myFile" name="filename">
+                        <button type="submit">Enviar</button>
+                      </div>
+                    </form>
+                  </td>
+                  <td>
+                    <div>
+                      <div>
+                        <h3>Fecha: </h3>
+                        <h3>Hora: </h3>
+                        <h3>Num. Pedido: </h3>
+                        <h3>Material(es): </h3>
+                        <h3>Cantidad: </h3>
+                        <h3>Personal recibido: </h3>
+                        <h3>Caducidad: </h3>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div>
+                      <div>
+                        <h1>Detalle de pedido</h1>
+                        <h3>Estado de pedido: </h3>
+                        <h3>Material a recibir: </h3>
+                        <h3>Cantidad de material a recibir: </h3>
+                        <h3>Fecha de material a recibir: </h3>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="celda-contenido">
+              <table>
+                <tr class="header">
+                  <div class="header">
+                    <a name="Registro de salida interna"></a><h2>Registro salida interna</h2>
+                  
+                </td>
+                </tr>
+                <tr>
+                  <td>
+                    <form class="reg-entradas" action="/action_page.php">
+                      <div>
+                        <div>
+                          <label for="fname">Solicitud</label>
+                        </div>
+                        <div>
+                          <input type="text" id="fname" name="firstname" placeholder="Registre Solicitud">
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <label for="lname">Material </label>
+                        </div>
+                        <div>
+                          <input type="text" id="lname" name="lastname" placeholder="Id. de material">
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <label for="country">Estado de entrega</label>
+                        </div>
+                        <div>
+                          <select class="dropdown" id="country" name="country">
+                            <option value="Incompleto">Incompleto</option>
+                            <option value="Completo">Completo</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <label for="subject">Observación </label>
+                        </div>
+                        <div>
+                          <textarea id="subject" name="subject" placeholder="Detalle el estado del pedido, incluya fotos (opcional)" style="height:200px"></textarea>
+                        </div>
+                      </div>
+                      <div>
+                        <input type="file" id="myFile" name="filename">
+                        <button type="submit">Enviar</button>
+                      </div>
+                    </form>
+                  </td>
+                  <td>
+                    <div>
+                      <h3>Fecha: </h3>
+                      <h3>Hora: </h3>
+                      <h3>ID. Pedido: </h3>
+                      <h3>Material(es): </h3>
+                      <h3>Cantidad: </h3>
+                      <h3>Personal que entrega: </h3>
+                      <h3>Personal que que recibe: </h3>
+                      <h3>Caducidad: </h3>
+                    </div>
+                  </td>
+                  <td>
+                    <div>
+                      <h1>Registro de personal que recibe</h1>
+                      <h3>Autorizacion para recibir: Si</h3>
+                      <h3>Productos por devolver: 0</h3>
+                      <h3>Registro de productos entregados: 3</h3>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="celda-contenido">
+              <table>
+                <tr>
+                  <div class="header">
+                    <a name="Registro salida externa"></a><h2>Registro salida externa</h2>
+                  </div>
+                  <td>
+                    <form class="reg-entradas" action="/action_page.php">
+                      <div>
+                        <div>
+                          <label for="fname">Recibo compra</label>
+                        </div>
+                        <div>
+                          <input type="text" id="fname" name="firstname" placeholder="Num. de recibo">
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <label for="lname">Entrega </label>
+                        </div>
+                        <div>
+                          <input type="text" id="lname" name="lastname" placeholder="Registre a quien entrega">
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <label for="country">Estado de entrega</label>
+                        </div>
+                        <div>
+                          <select class="dropdown" id="country" name="country">
+                            <option value="Incompleto">Entregado</option>
+                            <option value="Completo">Pendiente</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div>
+                        <div>
+                          <label for="subject">Detalle de entrega </label>
+                        </div>
+                        <div>
+                          <textarea id="subject" name="subject" placeholder="Detalle el estado del pedido, incluya fotos (opcional) " style="height:200px"></textarea>
+                        </div>
+                      </div>
+                      <div>
+                        <input type="file" id="myFile" name="filename">
+                        <button type="submit">Enviar</button>
+                      </div>
+                    </form>
+                  </td>
+                  <td>
+                    <div>
+                      <div>
+                        <h3>Fecha: </h3>
+                        <h3>Hora: </h3>
+                        <h3>ID. Compra: </h3>
+                        <h3>Producto(s): </h3>
+                        <h3>Cantidad: </h3>
+                        <h3>Personal que entrega: </h3>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <div>
+                      <div>
+                        <h1>Registro de cliente que recibe</h1>
+                        <h3>Comprobante de compra para recibir: Si</h3>
+                        <h3>Fecha de compra: 29/08/2021</h3>
+                        <h3>Garantia: Si</h3>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="footer">
+    <p>Industrias WardLock S.A. de R.L. de C.V.</p>
+    <p>Todos los derechos reservados</p>
+  </div>
+  <script src="js/acciones.js"></script>
+</body>
+</html>

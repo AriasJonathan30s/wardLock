@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reclutamiento.php">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/index.js"></script>
+    <title>RRHH RECLUTAMIENTO</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="#contact">Contact</a>
+        <a href="#news">News</a>
+        <a href="#home">Home</a>
+        <span color= "white" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;<h3 class="makeof"> WardLock</h3></span>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+        </div>
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div class="contenido">
+        <div><p><?php echo $advice;?></p></div>
+          <table>
+            <tr>
+                <td>
+                    <div class="inputblock">
+                        <form class="formpresent" action="reclutamiento.php" method="post">
+                            <H1>REGISTRO DE TRABAJADORES</h1>
+                            <input class="inputborde" type="text" placeholder="Nombre" id="nombre" name="nombre" required><br>
+                            <input class="inputborde" type="text" placeholder="Apellido" id="apellido" name="apellido" required><br>
+                            <input class="inputborde" type="text" placeholder="Puesto" id="puesto" name="puesto" required> <br>
+                            <input class="inputborde" type="text" placeholder="Area" id="area" name="area" required><br>
+                            <input class="inputborde" type="text" placeholder="Fecha de nac. AAAAMMDD" id="fechanac" name="fechanac" required><br><br><br>
+                            <button class="botonreg" type="submit" name="regtrab" id="regtrab">Registrar</button>
+                        </form> 
+                    </div>
+                </td>
+                <td>
+                    <div class="outputblock">
+                            <H1 class="bloqueName">DETALLES DE REGISTRO</h1>
+                            <p>Id de trabajador: <?php echo $idtrab;?></p>
+                            <P>Nombre: <?php echo $nomb;?></P>
+                            <p>Apellido: <?php echo $ape;?></p>
+                            <p>Posición: <?php echo $pos;?></p>
+                            <p>Área: <?php echo $area;?></p>
+                            <p>Fecha de nacimiento: <?php echo $nac;?></p>
+                            <p>Fecha de contratación: <?php echo $fech;?></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+      </div>
+<script src="js/index.js"></script>
+</body>
+</html>
